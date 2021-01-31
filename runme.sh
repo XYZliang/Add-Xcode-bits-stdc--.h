@@ -4,12 +4,12 @@
 ###
 # @Author: XYZliang
 # @Date: 2021-01-30 21:47:42
- # @LastEditTime: 2021-01-30 22:45:52
+ # @LastEditTime: 2021-01-31 15:47:08
 ###
 
 folder1="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"
 folder2="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include"
-workdir=$(pwd)
+workdir="$( cd "$( dirname "$0"  )" && pwd  )"
 
 function exist() {
     if [ -f "$1/bits/stdc++.h" ]; then
@@ -35,8 +35,8 @@ function newfolder() {
 }
 
 function copystdc() {
-    cp "$workdir/stdc++.h" "$1/bits/stdc++.h"
-    echo "复制stdc++.h"
+    cp -r "$workdir/Dependence/." "$1/."
+    echo "复制所缺相关头文件"
 }
 
 function doplan() {
