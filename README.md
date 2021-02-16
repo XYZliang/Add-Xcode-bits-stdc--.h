@@ -4,7 +4,7 @@
 
 ## Language
 
-English  ｜  [中文](README CHINESE.md)
+English  ｜  [中文](https://github.com/XYZliang/Add-Xcode-bits-stdc--.h/blob/main/README%20CHINESE.md)
 
 ## Description
 
