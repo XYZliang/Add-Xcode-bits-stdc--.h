@@ -1,24 +1,28 @@
 # Add Xcode bits/stdc++.h
 
-## 说明
-
-为macOS Xcode一键式添加bits/stdc++.h，解决Xcode c++使用bits/stdc++.h头文件时报错'bits/stdc++.h' file not found
-
-bits/stdc++.h，并在macOS Big Sur 11.2 Xcode12.4上测试通过，理论上所有系统以及Xcode均适用。
-
-所有头文件来自于 [GitHub-GNU 编译器集合 (GCC)](https://github.com/gcc-mirror/gcc)以及Ubuntu GCC-10版本，并修改bits/os_defines文件以适应macOS环境。
-
-每次更新或者下载新Xcode-beta替换旧Xcode时都会导致这些文件消失，因此每次都需要手动增加这些文件，略嫌麻烦，故有了此脚本文件。
 
 
+## Language
 
-## 如何使用
+English  ｜  [中文](README CHINESE.md)
 
-下载或者克隆文件到本地，打开终端，将runme.sh拖入到终端回车运行即可
+## Description
+
+Add bits/stdc++.h to macOS Xcode one-click to solve the problem of error 'bits/stdc++.h' file when using bits/stdc++.h header files in Xcode, and test it on macOS Big Sur 11.2 Xcode12.4, which is theoretically applicable to all systems and Xcode.
+
+All header files come from [GitHub-GNU compiler collection (GCC)](https://github.com/gcc-mirror/gcc) and Ubuntu GCC-10 version, and modify bits/os_def The ines file adapts to the macOS environment.
+
+Every time you update or download a new Xcode-beta to replace old Xcode, these files will disappear, so you need to manually add these files every time, so this script file is a little troublesome.
 
 
 
-## 出现错误？
+## How to use
 
-1. 首先尝试使用root权限运行脚本，即先sudo su root再拖入脚本运行。
-2. 如果运行后Xcode出现大量头文件报错，请尝试使用旧版的bits/stdc++.h文件，或者删除相关include语句，或者加入相关缺失的头文件。
+Download or clone the file locally, open the terminal, and drag the runme.sh to the terminal to enter and enter to run.
+
+
+
+## Error?
+
+1. First try to run the script using the root permission, that is, drag the su root into the script to run.
+2. If there is a large number of header file errors in Xcode after running, try using the old version of the bits/stdc++.h file, either delete the relevant inclusion statement, or add the relevant missing header file.
